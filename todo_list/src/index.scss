@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  font-family: 'Josefin Sans', -apple-system, BlinkMacSystemFont,'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 18px;
+ 
+}
+
+
+body.light-mode{
+  background-color: hsl(0, 0%, 98%)!important;
+  transition: all 0.5s ease-in-out;
+}
+
+body.dark-mode{
+  background-color: hsl(235, 21%, 11%)!important;
+  color:  hsl(234, 39%, 85%);
+  transition: all .5s ease-in-out;
+
+  .makeStyles-paper-21,
+  .makeStyles-paper-6,
+  .MuiListItem-root,
+  .MuiInputBase-input,
+  .makeStyles-icon-15,
+  .todoList__nav{
+    background-color: hsl(235, 24%, 19%)!important;
+  }
+
+  .MuiCheckbox-root{
+    &:hover{
+      border-color: hsl(234, 39%, 85%);
+    }
+  }
+
+  .makeStyles-paper-21{
+    box-shadow: unset;
+  }
+
+ 
+  .MuiListItem-root,
+  .todoList__nav{
+    border-top-color: hsl(234, 11%, 52%);
+    color:  hsl(234, 39%, 85%);
+  }
+
+  .MuiInputBase-input,
+  .MuiFormLabel-root{
+    color:  hsl(234, 39%, 85%)!important;
+  }
+  
+  .MuiTypography-body2{
+    color: rgba(202, 205, 232,.54);
+  }
+
+  .MuiIconButton-label{
+    color:  hsl(234, 39%, 85%);
+  }
+
+  .todoList__nav{
+    border-color: hsl(234, 11%, 52%);
+    box-shadow: unset;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
